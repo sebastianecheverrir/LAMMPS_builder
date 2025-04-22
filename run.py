@@ -48,7 +48,7 @@ zhi = 60	#  Also, take into account the space for the alkane chains!
 #       if Surfaces = 2, generate a flat Fe2O3 surface
 #       if Surfaces = 3, generate a rough Fe2O3 surface (only the surface is generated)
 #
-Surfaces = 0 
+Surfaces = 2 
 
 #Number of fractal levels used for the generation of the surfaces
 #	The inputs are integers
@@ -69,7 +69,7 @@ RMSin = 8.0
 #	This value does not have units. It corresponds to the number
 #	of Fe (or Fe2O3) lattice constants
 #	Exm: boxLenghtZ = 20 -> 20*aFe = 57.27320 Angstrom
-boxLenghtZ = 2
+boxLenghtZ = 1
 
 #####Inputs related to the OFM's
 

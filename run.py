@@ -48,7 +48,7 @@ zhi = 60	#  Also, take into account the space for the alkane chains!
 #       if Surfaces = 2, generate a flat Fe2O3 surface
 #       if Surfaces = 3, generate a rough Fe2O3 surface (only the surface is generated)
 #
-Surfaces = 2 
+Surfaces = 0 
 
 #Number of fractal levels used for the generation of the surfaces
 #	The inputs are integers
@@ -75,7 +75,7 @@ boxLenghtZ = 2
 
 #This flag determines if the the system will contain OFMs.
 #	if OFM = 1, the generation of OFMs is activated
-OFM = 1
+OFM = 0
 
 #Defines the type of OFM that will be used in the simulation
 #	the available options are: SA, SAm, GMS, OA, OAm, GMO
@@ -93,7 +93,7 @@ OFMn_y = 2
 
 #This flag determines if the the system will contain Alkanes.
 #	if Alkane = 1, the generation of Alkanes is activated
-Alkane = 1
+Alkane = 0
 
 #Defines the number of monomers on each alkane chain.
 #	The inputs are integers
@@ -146,6 +146,23 @@ Squalanen_x = 1
 Squalanen_y = 2
 Squalanen_z = 3
 
+#####Inputs related to R123
+
+#This flag determines if the the system will contain R123.
+#       if R123 = 1, the generation of R123 is activated
+
+R123 = 1
+
+#Number of benzylbenzoate chains to be placed along each
+#       direction of the simulation box
+#       The inputs are integers
+#       Exm:    R123n_x = 5
+#               R123n_y = 7
+#               R123n_z = 3
+
+R123n_x = 1
+R123n_y = 1
+R123n_z = 1
 
 
 #################################################################################3
@@ -193,7 +210,8 @@ potential = 'lopls'
 #if potential == 'lopls':
 lopls(xlo,xhi,ylo,yhi,zlo,zhi,OFMn_x,OFMn_y,nAlkane, Alkanen_x,\
                 Alkanen_y, Alkanen_z, Alkane, BZBZ, BZBZn_x, BZBZn_y, BZBZn_z,\
-                Squalane, Squalanen_x, Squalanen_y, Squalanen_z, OFM ,OFMtype, Surfaces,\
+                Squalane, Squalanen_x, Squalanen_y, Squalanen_z, R123, R123n_x, R123n_y, R123n_z, \
+                OFM ,OFMtype, Surfaces,\
                 FractalLevels,RMSin,H,boxLenghtX,boxLenghtY,boxLenghtZ,aFe,Separation)
 
 

@@ -1119,10 +1119,17 @@ def lopls(xlo,xhi,ylo,yhi,zlo,zhi,OFMn_x,OFMn_y,nAlkane, Alkanen_x,\
   # This determines how far apart all R123 molecules will be placed
   R123_x = (xhi-xlo)/R123n_x #(1.2533223*(nAlkane-1))+5
   R123_y = (yhi-ylo)/R123n_y
-  if R123n_z == 1:
-    R123_z = 0.0
+  if Surfaces == 0:
+    if R123n_z == 1:
+      R123_z = 0.0
+    else:
+      R123_z = (zhi)/(R123n_z)
   else:
-    R123_z = ((zhi-23.3065-5)-(zlo+23.3065+5))/(R123n_z-1)
+
+    if R123n_z == 1:
+      R123_z = 0.0
+    else:
+      R123_z = ((zhi-23.3065-5)-(zlo+23.3065+5))/(R123n_z-1)
 
 
   ######################################################################
@@ -1142,8 +1149,14 @@ def lopls(xlo,xhi,ylo,yhi,zlo,zhi,OFMn_x,OFMn_y,nAlkane, Alkanen_x,\
   f.write("  ylo yhi")
   f.write("\n")
 
+  #no surfaces
+  if Surfaces == 0 :
+    f.write(str(zlo)+"  "+str(zhi))
+    f.write("  zlo zhi")
+    f.write("\n")
+    f.write("}")
   #rough Iron surfaces
-  if Surfaces == 1 or Surfaces == 0 :
+  if Surfaces == 1 :
     f.write(str(zlo-boxLenghtZ*aFe-20)+"  "+str(zhi+boxLenghtZ*aFe+20))
     f.write("  zlo zhi")
     f.write("\n")
@@ -1343,7 +1356,10 @@ def lopls(xlo,xhi,ylo,yhi,zlo,zhi,OFMn_x,OFMn_y,nAlkane, Alkanen_x,\
     f.write(", 0, 0)")
     f.write("\n")
 
-    f.write("molecules7[*][*][*].move("+str(xlo)+","+str(ylo)+","+str(zlo+23.3065+8)+")")
+    if Surfaces == 0:
+      f.write("molecules7[*][*][*].move("+str(xlo)+","+str(ylo)+","+str(zlo)+")")
+    else:
+      f.write("molecules7[*][*][*].move("+str(xlo)+","+str(ylo)+","+str(zlo+23.3065+8)+")")
 
 
 

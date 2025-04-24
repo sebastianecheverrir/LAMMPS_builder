@@ -37,7 +37,7 @@ boxLenghtY = 10
 #This value determines the Z size of the section of the
 #	box that  will contain the alkane chains and OFMs.
 #	The units are Angstrom
-zhi = 60	#  Also, take into account the space for the alkane chains!
+zhi = 10*2.86366	#  Also, take into account the space for the alkane chains!
 
 
 #####Inputs related to the Surfaces
@@ -48,7 +48,7 @@ zhi = 60	#  Also, take into account the space for the alkane chains!
 #       if Surfaces = 2, generate a flat Fe2O3 surface
 #       if Surfaces = 3, generate a rough Fe2O3 surface (only the surface is generated)
 #
-Surfaces = 2 
+Surfaces = 0 
 
 #Number of fractal levels used for the generation of the surfaces
 #	The inputs are integers
@@ -160,9 +160,9 @@ R123 = 1
 #               R123n_y = 7
 #               R123n_z = 3
 
-R123n_x = 1
-R123n_y = 1
-R123n_z = 1
+R123n_x = 4
+R123n_y = 4
+R123n_z = 4
 
 
 #################################################################################3

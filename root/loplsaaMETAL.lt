@@ -48761,10 +48761,6 @@ LOPLSAA {
     @improper:0-0-87-0 @atom:* @atom:* @atom:87 @atom:*
     @improper:0-0-90-0 @atom:* @atom:* @atom:90 @atom:*
     @improper:0-0-842-0 @atom:* @atom:* @atom:842 @atom:*
-    @improper:80000-80200-80100-80300 @atom:80000 @atom:80200 @atom:80100 @atom:80300
-    @improper:80000-80200-80100-80400 @atom:80000 @atom:80200 @atom:80100 @atom:80400
-    @improper:80100-80500-80000-80600 @atom:80100 @atom:80500 @atom:80000 @atom:80600
-    @improper:80100-80500-80000-80700 @atom:80100 @atom:80500 @atom:80000 @atom:80700
   } #(end of impropers by type)
 
   write_once("In Settings") {
@@ -48788,10 +48784,6 @@ LOPLSAA {
     improper_coeff @improper:0-0-87-0 harmonic 0.65045 180 
     improper_coeff @improper:0-0-90-0 harmonic 0.1084085 180 
     improper_coeff @improper:0-0-842-0 harmonic 0.1084085 180 
-    improper_coeff @improper:80000-80200-80100-80300 harmonic 0.000 180.0 
-    improper_coeff @improper:80000-80200-80100-80400 harmonic 0.000 180.0 
-    improper_coeff @improper:80100-80500-80000-80600 harmonic 0.000 180.0 
-    improper_coeff @improper:80100-80500-80000-80700 harmonic 0.000 180.0 
   } #(end of improp_coeffs)
 
   write_once("In Init") {

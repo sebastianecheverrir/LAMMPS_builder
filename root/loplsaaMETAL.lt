@@ -44,7 +44,7 @@ LOPLSAA {
     @atom:80400 18.998 #F     "F04"  "For R123 from LigParGen"
     @atom:80500 35.450 #Cl    "Cl0"  "For R123 from LigParGen"
     @atom:80600 35.450 #Cl    "Cl1"  "For R123 from LigParGen"
-    @atom:80700 1.008  #HC    "H07c"  "For R123 from LigParGen"
+    @atom:80700 1.008  #HC    "H07"  "For R123 from LigParGen"
   } #(end of atom masses)
 
   write_once("In Settings"){

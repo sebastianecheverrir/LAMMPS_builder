@@ -31,13 +31,13 @@ import math
 #Size of the simulation box in the x and y direction. These
 #	values have to be given in terms of the lattice parameter
 
-boxLenghtX = 10
-boxLenghtY = 10
+boxLenghtX = 29
+boxLenghtY = 29
 
 #This value determines the Z size of the section of the
 #	box that  will contain the alkane chains and OFMs.
 #	The units are Angstrom
-zhi = 10*2.86366	#  Also, take into account the space for the alkane chains!
+zhi = 29*2.86366	#  Also, take into account the space for the alkane chains!
 
 
 #####Inputs related to the Surfaces
@@ -160,9 +160,9 @@ R123 = 1
 #               R123n_y = 7
 #               R123n_z = 3
 
-R123n_x = 4
-R123n_y = 4
-R123n_z = 4
+R123n_x = 15
+R123n_y = 15
+R123n_z = 15
 
 
 #################################################################################3

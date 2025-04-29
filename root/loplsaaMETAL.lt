@@ -129,7 +129,7 @@ LOPLSAA {
     set type @atom:80400 charge -0.1427
     set type @atom:80500 charge -0.1676
     set type @atom:80600 charge -0.1676
-    set type @atom:80700 charge 0.1881
+    set type @atom:80700 charge 0.1882 # it was 1881. modified to 1882 to make R123 charge neutral
 } #(end of atom charges)
 
   write_once("In Settings") {

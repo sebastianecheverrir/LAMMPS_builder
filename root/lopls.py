@@ -1149,10 +1149,12 @@ def lopls(xlo,xhi,ylo,yhi,zlo,zhi,OFMn_x,OFMn_y,nAlkane, Alkanen_x,\
   f.write("  ylo yhi")
   f.write("\n")
 
-  #no surfaces
+  #no surfaces (making a triclinic box)
   if Surfaces == 0 :
     f.write(str(zlo)+"  "+str(zhi))
     f.write("  zlo zhi")
+    f.write("\n")
+    f.write("0.0 0.0 0.0 xy xz yz")
     f.write("\n")
     f.write("}")
   #rough Iron surfaces
